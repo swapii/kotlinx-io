@@ -21,13 +21,14 @@ kotlin {
         macosX64("native")
     }
 
-    js {
-        nodejs {
-            testTask {
-                debug = false
-            }
-        }
-    }
+    // Disabled because JitPack can't build NPM modules
+    // js {
+    //     nodejs {
+    //         testTask {
+    //             debug = false
+    //         }
+    //     }
+    // }
 
     sourceSets {
         commonMain {
